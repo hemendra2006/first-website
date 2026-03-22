@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup_style.css">
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus in quasi, necessitatibus sit saepe aut. Officiis laudantium dicta eius neque assumenda. Sed natus similique, quaerat ipsum impedit odit enim quasi? Tempore id minus dolore enim?</p>
+
+<div class="container">
+    <div class="signup-box">
+        <h2>Create Account</h2>
+
+        <form>
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <div class="input-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password" required>
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <p class="login-link">
+                Already have an account? <a href="#">Login</a>
+            </p>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>
