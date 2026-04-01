@@ -3,7 +3,7 @@ let widget;
 function loadChart(symbol) {
     document.getElementById("chart").innerHTML = "";
 
-    widget = new TradingView.widget({
+   let widget = new TradingView.widget({
         width: "100%",
         height: "100%",
         symbol: symbol,

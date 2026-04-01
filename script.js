@@ -1,14 +1,32 @@
-function Fullname(){
-    window.location.href="tel:+919929203445";
-}
-// let Fullname=()=>{
-//     window.location.href="mailto:hemendrasinghbpr@gmail.com";
-// }
-// console.log("fullname");
+let btn = document.querySelector(".button1");
 
-let button=document.querySelector(".button1");
-let signup=document.querySelector(".container");
-button.addEventListener("click",(event)=>{
-    event.stopPropagation();
-    signup.classList.toggle("s1");
-})
+// 🔘 click pe
+btn.onclick = function () {
+
+    if (btn.innerText === "Start") {
+        btn.innerText = "Trade";
+        localStorage.setItem("Start", "done");
+        console.log("Saved:", localStorage.getItem("Start")); // debug
+    } else {
+        window.location.href = "chart.html";
+    }
+
+};
+
+
+let icon = document.querySelector("#icon");
+let mode = document.querySelector("#mode");
+
+let curr = "off";
+icon.addEventListener("click", function (){
+    if(curr=== "off"){
+        icon.innerHTML="<i class='fa-solid fa-toggle-on'></i>";
+        curr="on";
+        
+    }else{
+        icon.innerHTML="<i class='fa-solid fa-toggle-off'></i>";
+        curr="off";
+    }
+    mode.classList.toggle("dark");
+});
+

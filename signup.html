@@ -8,39 +8,80 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="signup-box">
-        <h2>Create Account</h2>
+    <header class="navbar-background">
+        <div class="nav-background">
+                <div class="navbar">
+                  <div class="logo">
+                    <img src="image.png"  class="img2"> 
+                    <pre><div class="text">Trading Bull</div> </pre>
+                  </div>
+                    <div>
+                      <a class="a1" href="login.html">Log in</a> 
+                    </div>
+                </div>
+        </div>  
+    </header>
 
-        <form>
+
+<main>
+
+                      
+<div id="signupPage" class="hidden">
+            <h2>Create Account</h2><br><br>
             <div class="input-group">
                 <label>Full Name</label>
-                <input type="text" placeholder="Enter your name" required>
+                <input type="text" placeholder>
             </div>
 
             <div class="input-group">
                 <label>Email</label>
-                <input type="email" placeholder="Enter your email" required>
+                <input type="email" placeholder>
             </div>
 
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" placeholder="Enter password" required>
+                <input type="password" placeholder>
             </div>
 
             <div class="input-group">
                 <label>Confirm Password</label>
-                <input type="password" placeholder="Confirm password" required>
+                <input type="password" placeholder>
             </div>
-
-            <button type="submit">Sign Up</button>
+            
+            <button onclick="completeSignup()">Submit</button>
 
             <p class="login-link">
-                Already have an account? <a href="#">Login</a>
+                Already have an account?  <a href="login.html">Login</a>
             </p>
-        </form>
+</div>
+
+<div class="box2">
+    <div class="b1">
+      <img src="https://i.pinimg.com/736x/53/2e/34/532e34306022985b9cc4bb4b497e10a8.jpg" >
+      <div class="b1-in">
+      <h5>Trade Futures and Options</h5>
+      <h6>Unlock the potential of crypto directly with INR</h6>
+      </div>
+    </div>
+    <div class="b2">
+      <img src="https://i.pinimg.com/736x/b7/d1/24/b7d1242dbd4106d0b123b77e7bed8617.jpg">
+      <div class="b2-in">
+      <h5>Instant INR Deposits</h5>
+      <h6>Deposit instantly with secure and easy payment options.</h6>
+      </div>
+    </div>
+    <div class="b3">
+      <img src="https://i.pinimg.com/736x/58/75/7b/58757b75795701494d0cfdc48e26a944.jpg">
+      <div class="b3-in">
+      <h5>Fully Compliant</h5>
+      <h6>Registered with FIU-India & fully compliant with Indian regulations</h6>
+      </div>
     </div>
 </div>
 
+</main>
+
+
+<script src="signup.js"></script>
 </body>
 </html>

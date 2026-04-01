@@ -8,55 +8,45 @@
     <link rel ="stylesheet" href ="style.css">
 </head>
 <body >
-    <header >
-        
-            <div class="nav-logo ">
+    <header  >
                 <div class="logo">
-                   <img src="image.png" width="60" class="img"> 
-                  <pre><div class="text">Trading Bull</div> </pre>
+                   <img src="image.png" width="60" class="img" > 
+                  <pre><div class="text" href="index.html">Trading Bull</div> </pre>
                 </div>
-                <div class="nav">
-
-                    <div class="nav1">
-                        <li class="list"><a href="signup.html" id="a1">My Account </a></li>
+                <div class="nav1">
+                        <li class="list"><a href="#" id="a1">My Account </a></li>
                         <li class="list"><a href="futures.html" id="a1">Futures </a></li>
                         <li class="list"><a href="portfolio.html" id="a1">Portfolio </a></li>
                         <li class="list"><a target="_blank" href="chart.html" id="a1">Charts </a></li>
                         <div class="chart">
-                            <a href="chart.html" id="a1"><i class="fa-solid fa-bars-staggered"></i> </a>
+                            <a href="chart.html" id="a1"><i class="fa-solid fa-chart-line"></i> </a>
                         </div> 
 
-                    </div>
-                    <div class="log">
-
-                        <li id="l1"><a href="signup.html" id="a2">Log In </a></li>
-                    </div>
-                </div>
-                
-            </div>
-        
+                        <li id="l1"><a href="signup.html" id="a2">Sign Up </a></li>
+                        
+                        <button id="icon"><i class="fa-solid fa-toggle-off"></i></button>
+                        
+                </div>   
     </header>
     <main>
         <section1>
-        <div class="main-background">
+        <div class="main-background" id="section1">
             
             <div class="main2">
-
-                <div class="text1">
-                    
-                        <div class="h3-in"><h3 class="box-in">Made In India</h3></div>
-                    
-                <h1 class="h1">Trade Futures & Options</h1>
-                <h1 class="h2"> on Bitcoin and Ether</h1>
-                <h6 class="h3">Elevate your crypto F&O trading with 24/7 open markets,
-efficient margining and INR settlement</h6><br>
-                <button class="button1" onclick="Fullname()"><a>Sign Up</a></button>
-                </div>
-                <div>
-                    <video width="300"   autoplay muted loop >
-                    <source src="video.mp4" type="video/mp4">
-                    </video>
-                </div>    
+                    <div class="text1">
+                        <div class="h3-in">
+                            <h3 class="box-in">Made In India</h3>
+                        </div>
+                        <h1 class="h1">Trade Futures & Options</h1>
+                        <h1 class="h2"> on Bitcoin and Ether</h1>
+                        <h6 class="h3">Elevate your crypto F&O trading with 24/7 open markets,efficient margining and INR settlement</h6><br>
+                        <button onclick ="Signup()"  id="text" class="button1" href="signup.html" >Start</button>
+                    </div>
+                    <div class="video1">
+                        <video width="300"   autoplay muted loop >
+                        <source src="video.mp4" type="video/mp4">
+                        </video>
+                    </div>    
             </div>
             <div class="main3">     
                 <div class="b1"> <img src="https://i.pinimg.com/736x/05/f1/3f/05f13fda29e4e6a34ac62ee3188bdbef.jpg" height="200px" width="200px"  class="img5"></div>
@@ -68,8 +58,8 @@ efficient margining and INR settlement</h6><br>
         </div>
     </section>
 
-    <section2>               
-        <div class="main11">
+    <section2 >               
+        <div class="main11" id="section2">
             <div class="box2">
                 <h4 class="t1">Designed To Delight Traders</h4>
                 <h1 class="t2">Like F&O Trading, But Better</h1>
@@ -83,14 +73,34 @@ efficient margining and INR settlement</h6><br>
                     <button class="button2"><a href="signup.html">Sign Up</a></button>
                 </div>       
                 <div class="b3">
-                     I LOVE TRADING <i class="fa-solid fa-heart"></i>
+                    <div class="b3-1">
+                            <img src="https://i.pinimg.com/736x/53/2e/34/532e34306022985b9cc4bb4b497e10a8.jpg" >
+                            <div class="b3-in">
+                                <h5>Complete KYC Verification</h5>
+                                <h6>Keep your Aadhar and PAN handy. KYC takes < 1 min</h6>
+                            </div>
+                    </div>
+                    <div class="b3-2">
+                            <img src="https://i.pinimg.com/736x/b1/66/4e/b1664eb11133fd0e551433010b189fa9.jpg">
+                            <div class="b3-in">
+                                <h5>Link Bank Account And Deposit INR</h5>
+                                <h6>Conveniently deposit INR directly from your bank account. Crypto not needed to trade</h6>
+                            </div>
+                    </div>
+                    <div class="b3-3">
+                            <img src="https://i.pinimg.com/736x/41/65/bc/4165bc426674809453e1848db12e06d9.jpg">
+                            <div class="b3-in">
+                                <h5>Start Trading</h5>
+                                <h6>Start trading futures and options on BTC and ETH</h6>
+                            </div>
+                    </div>
                 </div>             
             </div>
         </div>
     </section2>
 
-    <section3>
 
+    <section3>
             <div class="main12">
                 <div class="box4">
                     <h3 class="b4">Anytime. Anywhere</h3>
@@ -100,22 +110,21 @@ efficient margining and INR settlement</h6><br>
                     <div class="b8">
                     <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.delta.exchange/?code=VXUSZS" class="img2">
                     </div>
-                
                 </div>
                 <div class="box5">
-                   <!-- <img src="https://i.pinimg.com/1200x/f0/f9/25/f0f925165bc9f0a61820639494e11a1e.jpg" height="550px" width="550px" class="img3">   -->
+                   <img src="https://i.pinimg.com/736x/15/ff/b9/15ffb9638b857e32794fb72e83e592d6.jpg" height="500" width="500">  
                 </div>
             </div>
-
-
     </section3>
+
 </main>
+
     <footer>
         <div class="helpdesk-background">
             <div class="help-box1">
                 <div class="logo2">
                    <img src="image.png" width="60px" class="img3"> 
-                  <pre><div class="text2">Trading Bull</div> </pre>
+                    <pre><a href="index.html" class="text2">Trading Bull</a></pre>
                 </div>
                 <div>
                     <h5 class="help-boxin1">Delta Exchange India is operated by Excelium Technologies Private Limited, a FIU (Govt. of India) registered entity with REID</h5>

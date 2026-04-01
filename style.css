@@ -2,6 +2,12 @@ body{
     overflow-x: hidden;
 }
 
+/* @media screen and (max-width: 768px) {
+    body{
+        flex-wrap: wrap;
+    }
+} */
+
 *{
     margin: 0px;
     font-family: Arial;
@@ -28,17 +34,54 @@ header{
     background-color:white; 
     color: black;
     position: fixed ; 
-        width: 100%;
-        z-index: 1;  
-}
-
-.nav-logo{
-    height: 55px;
+    width: 100%;
+    z-index: 1;  
+    position: fixed;
+    width: 100%;
     padding: 2px 30px 3px 40px;;
-    gap: 500px;
+    gap: 400px;
     display: flex;
     align-items: center;
 }
+
+
+
+.fa-toggle-on{
+    color: white;
+}
+
+
+
+/* Icon style */
+#icon {
+  font-size: 29px;
+  cursor: pointer;
+  color:black;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+    #icon{
+        display: none;
+    }
+}
+
+/* ON state */
+.on {
+  color: white;
+}
+.dark{
+    background-color: #000000;
+    color: white;
+}
+
+
+.dark img{
+    filter: invert(1);
+} 
+
+
+
 @media screen and (max-width: 768px) {
     header{
         position: static;
@@ -55,9 +98,9 @@ header{
     #l1{
         display: none;
     }
-    .text1{
-        padding-bottom: 15px;
-        padding-left: 50px;
+    .text{
+        padding: 25px 0px 0px 0px;
+        font-size: larger;
     }
 
 }
@@ -67,12 +110,10 @@ header{
     width: 100px;
     display: flex;
     align-items:center;
+    cursor: pointer;
 }
 
-.nav{
-    display: flex;
-    gap: 110px;
-}
+
 .log{
     list-style-type: none;
 }
@@ -90,6 +131,7 @@ header{
 }
 
 .nav1{
+    height: 50px;
     display: flex;
     list-style-type: none;
     gap: 110px;
@@ -101,17 +143,12 @@ header{
 }
 #a1:hover{
     color: #fe6c02;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px 5px 5px 5px;
-
 }
 #a2{
     color: white;
     border-radius: 5px;
     border: 2px solid black;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     background-color: black;
     
 }
@@ -121,9 +158,9 @@ header{
     border: 2px solid #fe6c02;
 }
 
-#l1{
+/* #l1{
     padding-left: 40px ;
-}
+} */
 
 
 .text{
@@ -131,12 +168,26 @@ header{
     font-weight: bolder;
 }
 
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .main-background{
-    height: 100%;
+    height: 835px;
     width: 100%;
     background: #000000;
     background: linear-gradient(10deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
     color: white;
+    
+}
+
+@media screen and (max-width: 768px){
+    .main-background{
+        height: auto;
+        
+
+    }
 }
 
 
@@ -145,13 +196,12 @@ header{
     display:flex;
     gap: 200px;
     justify-content: end;
-   
 }     
 
 .text1{
     height: 500px;
     width: 800px;
-    padding: 100px 20px 0px 10px;
+    padding: 150px 20px 0px 10px;
     font-size: 25px;
     align-items: center;
     justify-content: center;
@@ -166,6 +216,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 .box-in{
      padding: 10px 10px 10px 30px;
 }
@@ -184,6 +235,7 @@ header{
    
     
 }
+
 .h1{
     padding-top: 40px;
 }
@@ -198,6 +250,16 @@ header{
     
 }
 
+.video1{
+    padding-top: 50px;
+}
+
+
+#signupPage {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: lightgray;
+}
 
 .button1{
     height: 40px;
@@ -207,11 +269,15 @@ header{
     border-radius: 9px;  
 }
 
+#Trade{
+    color: #000000;
+}
+
 a{
     text-decoration: none;
-    color: aliceblue;
-    
+    color: aliceblue;  
 }
+
 button:hover{
     transform: scale(1.1);
     
@@ -219,20 +285,14 @@ button:hover{
 
 .main3{
     width: auto;
-    padding: 50px;
+    padding: 100px 50px 50px 50px;
     display: flex;
     gap: 100px;
     flex-wrap: wrap;
     overflow-x: auto;
 }
 
-/* .b1{
-    
-    text-align: center;
-    line-height: 200px;
-    font-size: 20px;
-    
-} */
+
 .img5{
     border-radius: 20px;
     
@@ -242,6 +302,8 @@ button:hover{
     height: 700px;
     background:#18191e;
 } 
+
+
 
 .box2{
     padding: 70px 0px 0px 150px;  
@@ -278,7 +340,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     height: 399.99px;
-    width: 1000px;
+    width: 1230px;
     border: 2px solid #232f2e ;
     border-radius: 10px;
     
@@ -294,15 +356,6 @@ button:hover{
     border-radius: 10px;
 }
 
-.b3{
-    padding: 50px;
-    color: white;
-    height: 396px;
-    width: 546.80px;
-    border-color: aliceblue;
-    background-color: #22242c;
-    border-radius: 0px 10px 10px 0px;
-}
 
 .box-in1{
     padding-bottom: 20px;
@@ -319,27 +372,165 @@ button:hover{
 .button2{
     height: 54px;
     width: 340px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
     background-color: #fe6c02;
     border-radius: 9px;
+    border: 1px transparent;
 }
+
+.b3{
+    padding: 20px 20px 20px 40px;
+    color: white;
+    height: 396px;
+    width: 776.80px;
+    border-color: aliceblue;
+    background-color: #22242c;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+
+
+
+.b3-1{
+    padding-right: 10px;
+    gap: 100px;
+    display: flex;
+    height: 120px;
+    width: 700px;
+    align-items: center;   
+
+}
+.b3-1 img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.b3-1 h5{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    align-items: center;
+}
+.b3-1 h6{
+    font-family: aileron 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.b3-in  {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.b3-2{
+    padding-right: 10px;
+    gap: 100px;
+    display: flex;
+    height: 120px;
+    width: 700px;
+    align-items: center;   
+    
+}
+
+.b3-2 img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.b3-2 h5{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    align-items: center;
+}
+.b3-2 h6{
+    font-family: aileron 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.b3-in  {
+    display: flex;
+    flex-direction: column;
+}
+
+.b3-3{
+    padding-right: 10px;
+    gap: 100px;
+    display: flex;
+    height: 120px;
+    width: 700px;
+    align-items: center;
+  
+    
+}
+
+.b3-3 img{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+.b3-3 h5{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: larger;
+    align-items: center;
+}
+.b3-3 h6{
+    font-family: aileron 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.b3-in  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
 
 
 .main12{
+    width: 100%;
     height: 700px;
     background:#18191e;
     color: white;
-    padding: 50px;
+    padding: 50px 90px 50px 90px;
     display: flex;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .main12{
+        height: auto;
+
+    }
+    .logo2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
 }
 
 .box4{
-    padding: 0px 0px 0px 100px;
-    height: 100%;
+    margin: 50px;
+    /* padding: 0px 0px 0px 100px; */
+    height: auto;
     width: 100%;
-   
+    flex-wrap: wrap;
+    flex: 1 1 300px;
+    max-width: 100%;
+    height: auto;
 }
+
+
 
 .b4{
     color: #fe6c02;
@@ -379,8 +570,13 @@ button:hover{
 }
 
 .box5{
-    padding: 0px 200px 0px 400px;
-      
+    margin: 50px;
+    flex: 1 1 300px;
+}
+
+.box5 img{
+    border-radius: 50px;
+    margin-bottom: 60px;
 }
 
 .img3{
@@ -394,7 +590,8 @@ button:hover{
 
 .helpdesk-background{
     height: 245px;
-    background-color: #22242c;
+    background: #22242c;
+    /* background: linear-gradient(92deg, rgba(24, 25, 30, 1) 0%, rgba(0, 0, 0, 1) 100%); */
     padding: 20px 80px 20px 80px;
     display: flex;
 }
@@ -412,15 +609,17 @@ button:hover{
     width: 100px;
     display: flex;
     align-items:center;
+    cursor: pointer;
 }
 .img2{
     filter: brightness(150000000%);
 }
-.text2{
-    padding-top: 30px;
+.text2  {
+    font-size: larger;
     font-weight: bolder;
     color: #fe6c02;
 }
+
 .help-boxin1{
     font-weight: lighter;
     padding: 40px 0px 20px 0px;
@@ -509,6 +708,7 @@ ul5{
     header {
         height: 60px;
         width: 100%;
+        padding-left: 10px;
     }
     .nav-logo {
         width: 100px;
@@ -537,6 +737,7 @@ ul5{
         padding: 50px 10px 10px 10px;
         font-size: 18px;
     }
+ 
 
     video {
         width: 100%;
@@ -546,39 +747,48 @@ ul5{
     /* Horizontal scroll images */
     .main3 {
         gap: 20px;
-        padding: 20px;
+        /* padding: 20px; */
         display: flex;
         /* overflow-x: auto; */
         flex-direction: column;
     }
 
     .img2 {
-        width: 100%;
-        
+        width: 300px;
+        height: 300px;
+        margin: 25px;
     }
 
     /* Section 2 */
 
     .main11 {
+        height: 750px;
+        width: 100%;
         padding: 20px;
-        
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
     }
     .box2 {
         padding: 40px 20px;
         text-align: center;
+        height: auto;
+        width: 100%;
     }
 
     .box3 {
         width: 100%;
-        margin: 0px;
-        height: 380px;
         padding: 10px;
         margin: 1px;
     }
     .b1 {
-        width: auto;
+        width: 100%;
         height: auto;
-        padding-left: 40px;
+        /* padding-left: 40px; */
+    }
+    .img5{
+        height: auto;
+        width: 100%;
     }
 
     .b2 {
@@ -607,20 +817,26 @@ ul5{
     .main12 {
         flex-direction: column;
         height: auto;
-        padding:0%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .box4 {
+        height: auto;
         width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        /* flex-direction: column; */
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        
     }
 
     .box5 {
         padding: 0;
         display: flex;
         justify-content: center;
+        display: none;
     }
 
     .img3 {
@@ -639,9 +855,11 @@ ul5{
     }
 
     .b8{
-        width: 90%;
-        height: auto;
+        width: 300px;
+        height: 300px;
         padding: 0px;
+        align-items: center;
+        display: none;
     }
 
     .help-box1,
