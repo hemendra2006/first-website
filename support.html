@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support Centre</title>
+  <link rel="stylesheet" href="support.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🛠 Support Centre</h1>
+
+  <!-- Contact Form -->
+  <div class="card">
+    <h2>Contact Us</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Describe your issue..."></textarea>
+    <button onclick="sendMessage()">Submit</button>
+  </div>
+
+  <!-- FAQ -->
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">How to signup?</h3>
+      <p>Click on Sign Up button and enter your details.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">Why Trade button not showing?</h3>
+      <p>You need to signup first. After signup, Trade button will appear.</p>
+    </div>
+
+    <div class="faq">
+      <h3 onclick="toggleFAQ(this)">How referral works?</h3>
+      <p>Share your referral link and earn rewards when others signup.</p>
+    </div>
+
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Back</a>
+</div>
+
+<script src="support.js"></script>
+</body>
+</html>

@@ -70,22 +70,34 @@ body {
 
 main{
     display: flex;
-    position: fixed;
-    padding-top: 150px;
-    gap: 70px;
+    padding: 120px 20px 20px;
+    gap: 40px;
 }
 
-#signupPage {
+
+@media screen and (max-width:768px) {
+    main{
+        flex-direction: column;
+        display: flex;
+        margin: auto;
+    }            
+}
+
+#loginuser {
     height: 100%;
     width: 470px;
     margin: 50px 50px 10px 200px;
     padding: 20px;
-    color: white;   
+    color: white;  
+     
 }
 
 @media screen and (max-width:768px) {
-    #signupPage{
-        margin: 0%;
+    #loginuser{
+        width: 100%;
+        max-width: 450px;
+        margin:  auto;
+        height: auto;
     }
 }
 
@@ -109,7 +121,7 @@ main{
 
 .input-group input {
     height: 42px;
-    width: 369px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #8E9298;
     border-radius: 5px;
@@ -121,12 +133,12 @@ main{
 @media screen and (max-width:768px) {
     .input-group input{
         height: 42px;
-        width: 280px;
+        width: 100%;
     }
 }
 
 button {
-    width: 369px;
+    width: 100%;
     padding: 10px;
     border: none;
     background: #fe6c02;
@@ -139,7 +151,7 @@ button {
 @media screen and (max-width:768px) {
     button{
         height: 42px;
-        width: 280px;
+        width: 100%;
     }
 }
 
@@ -172,3 +184,38 @@ button {
     border-radius: 20px;
     
 }
+
+
+.forgot{
+    margin-top: 10px;
+    color: #fe6c02;
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.forgot-btn{
+    width: 150px;
+    color: #fe6c02;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+}
+
+/* .forgot-box{
+    position: absolute;
+    background-color: #fe6c02;
+    height: 500px;
+    width: 500px;
+    top: 150px;
+    
+} */
+
+
+
+
+
+
+

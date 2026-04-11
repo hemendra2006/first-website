@@ -26,20 +26,26 @@
 <main>
 
                       
-<div id="signupPage" class="hidden">
+<div id="loginuser" class="hidden">
             <h2>Log In</h2><br><br>
 
             <div class="input-group">
                 <label>Email</label>
-                <input type="email" placeholder>
+                <input type="Email" placeholder="abc@gmail.com" id="Email">
             </div>
 
             <div class="input-group">
                 <label>Password</label>
-                <input type="password" placeholder>
+                <input type="password" placeholder="e.g. At least 8 characters" id="password">
             </div>
             
-            <button onclick="completeSignup()">Log In</button>
+            <button onclick="login()">Log In</button>
+
+            <div class="forgot">
+               <button onclick="forgotemailid()" class="forgot-btn" >Forgot Email ID?</button>
+               <button onclick="forgotpassword()" class="forgot-btn" >Forgot Password?</button>
+               
+            </div>
 
             <p class="login-link">
                 Don't have an account?  <a href="signup.html">Sign up</a>
@@ -48,11 +54,14 @@
 
 <div class="box2">
     <img src="https://i.pinimg.com/1200x/67/c6/dd/67c6dd2de3347aaeb3e0fcc8308de357.jpg">
+    <!-- <div class="forgot-box">
+       <input type="Email" placeholder="abc@gmail.com" id="Email"> 
+    </div> -->
 </div>
 
 </main>
+<!-- <button onclick="forgotemailid()" >Click Me</button> -->
 
-
-<script src="login.js"></script>
+<script src="login.js" ></script>
 </body>
 </html>

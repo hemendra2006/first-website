@@ -34,8 +34,7 @@ header{
     background-color:white; 
     color: black;
     position: fixed ; 
-    width: 100%;
-    z-index: 1;  
+    /* z-index: 1;   */
     position: fixed;
     width: 100%;
     padding: 2px 30px 3px 40px;;
@@ -54,7 +53,7 @@ header{
 
 /* Icon style */
 #icon {
-  font-size: 29px;
+  font-size: 23px;
   cursor: pointer;
   color:black;
   background-color: transparent;
@@ -82,16 +81,16 @@ header{
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1241px) {
     header{
         position: static;
+        display: flex;
     }
     .img{
         width: 60%;
         padding-bottom: 10%;
     }
     .nav-logo{
-        
         align-items: normal;
         display: flex; 
     }
@@ -139,29 +138,32 @@ header{
 }
 #a1{
     /* text-decoration: none; */
+    height: auto;
     color: rgb(118, 113, 113);
 }
 #a1:hover{
     color: #fe6c02;
 }
-#a2{
+.a2{
     color: white;
     border-radius: 5px;
     border: 2px solid black;
     padding: 5px 10px 5px 10px;
     background-color: black;
-    
 }
-#a2:hover{
+
+@media screen and (max-width: 1241px) {
+    .a2{
+        /* width: 1000px; */
+        display: none;
+    }
+}
+
+.a2:hover{
     color: #000000;
     background-color: #fe6c02;
     border: 2px solid #fe6c02;
 }
-
-/* #l1{
-    padding-left: 40px ;
-} */
-
 
 .text{
     padding-top: 30px;
@@ -175,7 +177,7 @@ header{
 }
 .main-background{
     height: 835px;
-    width: 100%;
+    width: auto;
     background: #000000;
     background: linear-gradient(10deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
     color: white;
@@ -292,6 +294,12 @@ button:hover{
     overflow-x: auto;
 }
 
+@media screen and (max-width: 768px){
+    .main3{
+        padding-top: 0%;
+    }
+}
+
 
 .img5{
     border-radius: 20px;
@@ -332,6 +340,12 @@ button:hover{
 .t3{
     color:#8E9298 ;
     padding-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .t1 ,t2 , t3{
+
+    }
 }
 
 
@@ -380,7 +394,7 @@ button:hover{
 }
 
 .b3{
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 90px;
     color: white;
     height: 396px;
     width: 776.80px;
@@ -464,9 +478,7 @@ button:hover{
     display: flex;
     height: 120px;
     width: 700px;
-    align-items: center;
-  
-    
+    align-items: center;   
 }
 
 .b3-3 img{
@@ -502,7 +514,7 @@ button:hover{
     height: 700px;
     background:#18191e;
     color: white;
-    padding: 50px 90px 50px 90px;
+    padding: 50px 0px 50px 90px;
     display: flex;
     
 }
@@ -702,7 +714,7 @@ ul5{
 }
 
 /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
+@media (max-width: 1241px) {
 
     /* Navbar fix */
     header {
@@ -872,3 +884,8 @@ ul5{
     }
 
 }
+
+
+
+
+

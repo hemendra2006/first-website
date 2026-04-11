@@ -1,7 +1,7 @@
 let widget;
 
 function loadChart(symbol) {
-    document.getElementById("chart").innerHTML = "";
+    document.getElementById("chart").innerHTML = "hello";
 
    let widget = new TradingView.widget({
         width: "100%",
@@ -49,3 +49,5 @@ document.getElementById("fullscreenBtn").addEventListener("click", function () {
 
 // default load
 loadChart("BINANCE:BTCUSDT");
+
+

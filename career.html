@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Careers</title>
+  <link rel="stylesheet" href="career.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>💼 Careers</h1>
+
+  <div class="card">
+    <h2>Join Our Team</h2>
+    <p>
+      Hum ek growing platform bana rahe hain aur passionate logon ko team me lana chahte hain.
+    </p>
+  </div>
+
+  <!-- Job 1 -->
+  <div class="card">
+    <h2>Frontend Developer</h2>
+    <p>Skills: HTML, CSS, JavaScript</p>
+    <p>Experience: Beginner / Intermediate</p>
+    <button onclick="applyJob('Frontend Developer')">Apply Now</button>
+  </div>
+
+  <!-- Job 2 -->
+  <div class="card">
+    <h2>Backend Developer</h2>
+    <p>Skills: Node.js / Firebase</p>
+    <p>Experience: Intermediate</p>
+    <button onclick="applyJob('Backend Developer')">Apply Now</button>
+  </div>
+
+  <!-- Job 3 -->
+  <div class="card">
+    <h2>UI/UX Designer</h2>
+    <p>Skills: Figma, Design Sense</p>
+    <p>Experience: Beginner</p>
+    <button onclick="applyJob('UI/UX Designer')">Apply Now</button>
+  </div>
+
+  <!-- Apply Form -->
+  <div class="card form-box" id="applyForm" style="display:none;">
+    <h2>Apply for Job</h2>
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Why should we hire you?"></textarea>
+    <button onclick="submitApplication()">Submit</button>
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Back</a>
+</div>
+
+<script src="careers.js"></script>
+</body>
+</html>

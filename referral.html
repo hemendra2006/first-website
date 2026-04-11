@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Referral Program</title>
+  <link rel="stylesheet" href="referral.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎁 Referral Program</h1>
+
+  <div class="card">
+    <h2>Your Referral Link</h2>
+    <div class="ref-box">
+      <input type="text" id="refLink" readonly>
+      <button onclick="copyLink()">Copy</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>How it works?</h2>
+    <ul>
+      <li>Apna referral link share karo</li>
+      <li>Friend signup karega</li>
+      <li>Aapko reward milega 🎉</li>
+    </ul>
+  </div>
+
+  <div class="card stats">
+    <h2>Your Stats</h2>
+    <p>Total Referrals: <span id="totalRef">0</span></p>
+    <p>Total Earnings: ₹<span id="earnings">0</span></p>
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Back</a>
+</div>
+
+<script src="referral.js"></script>
+</body>
+</html>

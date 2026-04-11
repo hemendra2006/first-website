@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+.account-container {
+    width: 350px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.info {
+    margin: 15px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+p {
+    background: #eee;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
