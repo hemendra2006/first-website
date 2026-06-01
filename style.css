@@ -61,17 +61,12 @@ header{
 }
 @media screen and (max-width: 768px) {
     #icon{
-        display: flex;
         display: none;
-        font-size: 23px;
-        cursor: pointer;
-        color:black;
-        background-color: transparent;
-        border: none;
+
     }
 
     #iconmob{
-        display: block;
+        /* display: block; */
         font-size: 23px;
         cursor: pointer;
         color:black;
