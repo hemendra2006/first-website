@@ -96,12 +96,14 @@ buttons.forEach(btn => {
 });
 
 
-let widget;
+let widgetLoaded = false;
 
 function loadChart(symbol) {
-    document.getElementById("chart").innerHTML = "hello";
 
-   let widget = new TradingView.widget({
+    // container clear (important)
+    document.getElementById("chart").innerHTML = "";
+
+    new TradingView.widget({
         width: "100%",
         height: "100%",
         symbol: symbol,
@@ -111,39 +113,58 @@ function loadChart(symbol) {
         style: "1",
         locale: "en",
 
-        enable_publishing: true,
+        enable_publishing: false,
         allow_symbol_change: true,
-        withdateranges: true,
-        hide_side_toolbar: false,
-        hide_top_toolbar: false,
-        details: true,
-        hotlist: true,
-        calendar: true,
 
-        studies: [
-            "Moving Average@tv-basicstudies",
-            "Bollinger Bands@tv-basicstudies"
-        ],
+        container_id: "chart",
 
-        container_id: "chart"
+         disabled_features: [],
+         enabled_features: ["move_logo_to_main_pane"],
+
+        // 🔥 YAHI ADD KARNA THA (important)
+        overrides: {
+            "paneProperties.dragging": true,
+            "scalesProperties.zoomEnabled": true
+        }
     });
+
+    widgetLoaded = true;
 }
 
-// dropdown change
-document.getElementById("chartSelect").addEventListener("change", function () {
-    loadChart(this.value);
+
+
+// NAV CLICK
+document.querySelectorAll(".nav-item").forEach(item => {
+    item.addEventListener("click", function () {
+
+        
+        
+
+        // active button
+        document.querySelectorAll(".nav-item").forEach(btn => btn.classList.remove("active-btn"));
+        this.classList.add("active-btn");
+
+        // page switch
+        document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
+        document.getElementById(this.dataset.page).classList.add("active");
+
+        let pageId = this.getAttribute("data-page");
+        document.getElementById(pageId).classList.add("active");
+
+        // load chart when opening
+        if (this.dataset.page === "chartPage") {
+            setTimeout(() => {
+                loadChart("BINANCE:BTCUSDT");
+            }, 100);
+        }
+    });
 });
 
-// fullscreen button
-document.getElementById("fullscreenBtn").addEventListener("click", function () {
-    let chart = document.getElementById("chart");
+// FIRST LOAD
+window.onload = function () {
+    loadChart("BINANCE:BTCUSDT");
+};
 
-    if (!document.fullscreenElement) {
-        chart.requestFullscreen();
-    } else {
-        document.exitFullscreen();
-    }
-});
 
-// default load
-loadChart("BINANCE:BTCUSDT");
+
+

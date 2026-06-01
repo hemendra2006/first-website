@@ -51,3 +51,8 @@ document.getElementById("fullscreenBtn").addEventListener("click", function () {
 loadChart("BINANCE:BTCUSDT");
 
 
+
+
+
+
+

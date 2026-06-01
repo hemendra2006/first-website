@@ -15,16 +15,10 @@ html, body {
     flex-direction: column;
     display: flex;
     min-height: 100vh;
-    margin: 0;
+    overflow: hidden;
 
 }
 
-/* .nav-background {
-    height: 55px;
-    width: 100%;
-    background-color: #18191E;
-    display: flex;
-} */
 @media screen and (max-width: 768px) {
     .nav-background {
         height: 55px;
@@ -51,7 +45,32 @@ html, body {
         display: flex;
         align-items: center;
     }
+
+        #iconmob{
+        display: block;
+        font-size: 23px;
+        cursor: pointer;
+        color:white;
+        background-color: transparent;
+        border: none;
+        margin-left: 170px;
+    }
     
+}
+
+.market{
+    padding-top: 14px;
+    padding-right: 7px;
+}
+
+
+#icon {
+margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  color:white;
+  background-color: transparent;
+  border: none;
 }
 
 .img2{
@@ -112,11 +131,14 @@ td{
 
 
 footer{
-    height: 50px;
+    height: 70px;
     width: auto;
     background-color: #18191E;
     display: flex;
     gap: 8px;
+    bottom: 0;
+    background: #111;
+    z-index: 10;
 }
 
 
@@ -141,18 +163,12 @@ footer{
     color: #FE6C02;
 }
 
-
-
-
-
-
 .main{
     flex:1;
     overflow-y:auto;
-    padding:15px;
 }
 
-/* PAGES */
+
 .page{
     display:none;
     color:white;
@@ -161,7 +177,6 @@ footer{
 .page.active{
     display:block;
 }
-
 
 .selector {
     margin-bottom: 20px;
@@ -177,15 +192,40 @@ select {
     border-color: #fe6c02;
     font-weight: bold;
 }
- button {
+
+button {
     padding: 10px;
     border-radius: 50%;
     margin: 8px;
 }
 
+.page {
+    display: none;
+    padding: 10px;
+}
+
+.active {
+    display: block;
+}
+
+
 #chart {
     width: 100%;
-    height: 90%;
-    margin: auto;
-    color: thistle;
+    height: 200px; 
+    touch-action: none;
+    position: relative; 
+    left: 0;
+    right: 0;
+    padding: 0;
+    
 }
+
+/* mobile */
+@media (max-width: 768px) {
+    #chart {
+        height: 300px;
+        
+    }
+}
+
+
